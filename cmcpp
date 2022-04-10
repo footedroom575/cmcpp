@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+# create 2 folders named 'modules' and 'headers' in the working directory from where this script is executed
+mkdir ${pwd}modules
+mkdir ${pwd}headers
+touch ${pwd}main.cpp
