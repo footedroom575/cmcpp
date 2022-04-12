@@ -14,7 +14,7 @@ then
     mkdir ${pwd}modules
     touch ${pwd}modules/$1.cpp
     mkdir ${pwd}headers
-    touch ${pwd}headers/$1.cpp
+    touch ${pwd}headers/$1.h
     touch ${pwd}main.cpp
 else
     echo "Usage: ./cmcpp.sh [folder_name]"
