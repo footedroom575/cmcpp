@@ -3,6 +3,19 @@
 # create 2 folders named 'modules' and 'headers' and 1 file named "main.cpp" in the working directory from where this script is executed
 
 # script for personal use, I use it for modularity in my own projects
-mkdir ${pwd}modules
-mkdir ${pwd}headers
-touch ${pwd}main.cpp
+# execute commands below if no argument was passed to the script
+if [ $# -eq 0 ]
+then
+    mkdir ${pwd}modules
+    mkdir ${pwd}headers
+    touch ${pwd}main.cpp
+elif [ $# -eq 1 ]
+then
+    mkdir ${pwd}modules
+    touch ${pwd}modules/$1.cpp
+    mkdir ${pwd}headers
+    touch ${pwd}headers/$1.cpp
+    touch ${pwd}main.cpp
+else
+    echo "Usage: ./cmcpp.sh [folder_name]"
+fi
