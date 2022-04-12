@@ -17,5 +17,5 @@ then
     touch ${pwd}headers/$1.h
     touch ${pwd}main.cpp
 else
-    echo "Usage: ./cmcpp.sh [folder_name]"
+    echo "Usage: cmcpp [folder_name]"
 fi
