@@ -2,4 +2,4 @@
 
 cp ./cmcpp /usr/bin/
 
-echo "cmcpp installed successfully"" >> /tmp/cmcpp.log
+echo "cmcpp installed successfully"
